@@ -6440,10 +6440,10 @@ remark-cli@7.0.1:
     remark "^11.0.0"
     unified-args "^7.0.0"
 
-remark-lint-emphasis-marker@1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/remark-lint-emphasis-marker/-/remark-lint-emphasis-marker-1.0.3.tgz#6dc4e7df13e5092c1222110f826f68b4b3920550"
-  integrity sha512-ea2tEVyhZvYxwj6AHsW2qzgEDLljcnzq5taZ3FJFL0KMZYZHfWaIU90H43jrW4seGEtmaP1bmoqJaTavJ2x5Jw==
+remark-lint-emphasis-marker@1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/remark-lint-emphasis-marker/-/remark-lint-emphasis-marker-1.0.4.tgz#86b5824a6d568726a8e5cb675ede92825e3297b7"
+  integrity sha512-TdYISSw7Ib6EJDApDj9zcZNDCJEaEoQIrYS3+QH2TQxoDx96B0t1bbErRM5L/hx1UWPBpeFLKpgIWL163eMmYA==
   dependencies:
     unified-lint-rule "^1.0.0"
     unist-util-generated "^1.1.0"
@@ -6602,10 +6602,10 @@ remark-lint-ordered-list-marker-style@^1.0.0:
     unist-util-position "^3.0.0"
     unist-util-visit "^1.1.1"
 
-remark-lint-strong-marker@1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/remark-lint-strong-marker/-/remark-lint-strong-marker-1.0.3.tgz#028e05b046ef260e8d40b342900061f1d09c8131"
-  integrity sha512-PFkH282dCwfRsVEw9IxbYbaZBY4UcTuT2SN+lA3R0cBeocWnOySVw8YEm4sv9JfV8BLcQA5gc4tj66/U3KCScw==
+remark-lint-strong-marker@1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/remark-lint-strong-marker/-/remark-lint-strong-marker-1.0.4.tgz#7cef1bc8e9446f4f1d009555e42cc08bd30bddb4"
+  integrity sha512-X9f6yhZ85cdP0cmCgkqlbxllpeQ60pS9Qqk9Jb9SZo6f95esaHptQ5bExb1ZVXzhSHz2Xz86tUhXtzG3zGFD4g==
   dependencies:
     unified-lint-rule "^1.0.0"
     unist-util-generated "^1.1.0"
@@ -6649,10 +6649,10 @@ remark-parse@^7.0.0:
     vfile-location "^2.0.0"
     xtend "^4.0.1"
 
-remark-preset-lint-recommended@3.0.3:
-  version "3.0.3"
-  resolved "https://registry.yarnpkg.com/remark-preset-lint-recommended/-/remark-preset-lint-recommended-3.0.3.tgz#1322af0e49801278057f8f275ed1b6ed60328b40"
-  integrity sha512-5sQ34j1Irlsj6Tt4WWRylZ7UU+1jD5es/LfDZBZp/LXDwC4ldGqKpMmCCR6Z00x1jYM1phmS4M+eGqTdah0qkQ==
+remark-preset-lint-recommended@3.0.4:
+  version "3.0.4"
+  resolved "https://registry.yarnpkg.com/remark-preset-lint-recommended/-/remark-preset-lint-recommended-3.0.4.tgz#8e43940e46b2cb0dc6c89c71066f87f59321d5de"
+  integrity sha512-i4GoobwWKt5LDJxIZjhHnnYiQISacNE8Oxj1ViwSHJnTUCtd7vh3KwtsfV8DrLsFUqRogX49iJEuZWXipY3PJA==
   dependencies:
     remark-lint "^6.0.0"
     remark-lint-final-newline "^1.0.0"
