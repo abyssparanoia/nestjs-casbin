@@ -68,7 +68,7 @@
     "@nestjs/common": "^6.11.11",
     "@nestjs/schematics": "8.0.3",
     "@nestjs/testing": "6.11.11",
-    "@types/jest": "24.9.1",
+    "@types/jest": "27.0.1",
     "@types/lodash": "4.14.173",
     "@types/node": "12.20.25",
     "@types/supertest": "2.0.11",
