@@ -6,7 +6,6 @@
     "experimentalDecorators": true,
     "sourceMap": true,
     "target": "es2017",
-    "outDir": "build/main",
     "rootDir": "src",
     "incremental": true,
     "moduleResolution": "node",
@@ -19,7 +18,7 @@
     // "emitDecoratorMetadata": true /* Enables experimental support for emitting type metadata for decorators. */,
 
     "lib": ["es2017"],
-    "types": ["node","@types/jest"],
+    "types": ["node", "@types/jest"],
     "typeRoots": ["node_modules/@types", "src/types"]
   },
   "exclude": ["node_modules", "test", "dist", "**/*spec.ts"],
