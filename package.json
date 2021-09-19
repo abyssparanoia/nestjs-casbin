@@ -2,16 +2,22 @@
   "name": "@abyssparanoia/nestjs-casbin",
   "version": "2.0.8",
   "description": "NestJS Casbin module for all adapters",
-  "main": "cjs/index.js",
-  "module": "esm/index.js",
-  "typings": "esm/index.d.ts",
+  "author": {
+    "name": "Rex Isaac Raphael",
+    "email": "rex.rahael@outlook.com",
+    "url": "https://xraph.com"
+  },
+  "main": "build/main/index.js",
+  "typings": "build/main/index.d.ts",
+  "module": "build/module/index.js",
   "repository": "ssh://git@github.com/abyssparanoia/nestjs-casbin.git",
   "license": "MIT",
   "keywords": [],
   "scripts": {
-    "build": "run-p -l build:*",
-    "build:cjs": "tsc --project . --module commonjs --outDir ./cjs",
-    "build:esm": "tsc --project . --module es2015 --outDir ./esm",
+    "describe": "npm-scripts-info",
+    "build": "run-s clean && run-p build:*",
+    "build:main": "tsc -p tsconfig.json",
+    "build:module": "tsc -p tsconfig.module.json",
     "fix": "run-s fix:*",
     "fix:prettier": "prettier \"src/**/*.ts\" --write",
     "fix:tslint": "tslint --fix --project .",
@@ -27,19 +33,30 @@
     "doc:publish": "gh-pages -m \"[ci skip] Updates\" -d build/docs",
     "version": "standard-version",
     "reset": "git clean -dfx && git reset --hard && npm i",
-    "clean": "run-p -l clean:*",
-    "clean:cjs": "rimraf cjs",
-    "clean:esm": "rimraf esm",
-    "prebuild": "yarn clean"
+    "clean": "trash build test",
+    "prepare-release": "run-s reset test doc:html version doc:publish"
   },
-  "files": [
-    "cjs",
-    "esm"
-  ],
+  "scripts-info": {
+    "info": "Display information about the package scripts",
+    "build": "Clean and rebuild the project",
+    "fix": "Try to automatically fix any linting problems",
+    "test": "Lint and unit test the project",
+    "watch": "Watch and rebuild the project on save, then rerun relevant tests",
+    "cov": "Rebuild, run tests, then create and open the coverage report",
+    "doc": "Generate HTML API documentation and open it in a browser",
+    "doc:json": "Generate API documentation in typedoc JSON format",
+    "version": "Bump package.json version, update CHANGELOG.md, tag release",
+    "reset": "Delete all untracked files and reset the repo to the last commit",
+    "prepare-release": "One-step: clean, build, test, publish docs, and prep a release"
+  },
+  "engines": {
+    "node": ">=8.9"
+  },
   "dependencies": {
     "casbin": "^4.1.1",
     "casbin-mongodb-adapter": "^1.1.11",
-    "mongodb": "^3.5.5"
+    "mongodb": "^3.5.5",
+    "uuid": "^8.0.0"
   },
   "peerDependencies": {
     "@nestjs/common": "^7.0.3"
@@ -57,7 +74,6 @@
     "@types/lodash": "4.14.173",
     "@types/node": "14.17.17",
     "@types/supertest": "2.0.11",
-    "@types/uuid": "^8.3.1",
     "codecov": "3.8.3",
     "cz-conventional-changelog": "3.3.0",
     "gh-pages": "2.2.0",
@@ -81,8 +97,7 @@
     "tslint": "5.20.1",
     "tslint-config-prettier": "1.18.0",
     "tslint-immutable": "6.0.1",
-    "typescript": "4.4.3",
-    "uuid": "^8.3.2"
+    "typescript": "4.4.3"
   },
   "jest": {
     "globals": {

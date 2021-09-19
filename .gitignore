@@ -1,15 +1,11 @@
 node_modules
 build
-dist
 test
 src/**.js
 .idea/*
-cjs
-esm
 
 coverage
 .nyc_output
 *.log
 
 package-lock.json
-tsconfig.tsbuildinfo
