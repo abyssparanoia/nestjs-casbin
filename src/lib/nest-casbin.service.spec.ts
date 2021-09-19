@@ -4,7 +4,6 @@ import { Provider } from '@nestjs/common';
 import { CASBIN_ENFORCER } from './nest-casbin.constants';
 import { newEnforcer } from 'casbin';
 import * as path from 'path';
-import { MongoAdapter } from 'casbin-mongodb-adapter';
 
 describe('NestCasbinService', () => {
   let service: NestCasbinService;
@@ -12,13 +11,10 @@ describe('NestCasbinService', () => {
   const casbinEnforcerProvider: Provider = {
     provide: CASBIN_ENFORCER,
     useFactory: async () => {
-      const model = path.resolve(__dirname, '../test-files/rbac_model.conf');
-      const adapter = await MongoAdapter.newAdapter({
-        uri: 'mongodb://localhost:27017',
-        collectionName: 'casbin',
-        databaseName: 'casbindb',
-      });
-      const e = await newEnforcer(model, adapter);
+      const e = await newEnforcer(
+        path.resolve(__dirname, './rbac_model.test.conf'),
+        path.resolve(__dirname, './rbac_model.test.csv')
+      );
       await e.loadPolicy();
       return e;
     },
