@@ -10,7 +10,7 @@
   "main": "build/main/index.js",
   "typings": "build/main/index.d.ts",
   "module": "build/module/index.js",
-  "repository": "https://github.com/juicycleff/nestjs-casbin-mongodb",
+  "repository": "ssh://git@github.com/abyssparanoia/nestjs-casbin.git",
   "license": "MIT",
   "keywords": [],
   "scripts": {
@@ -131,5 +131,9 @@
     "exclude": [
       "**/*.spec.js"
     ]
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://npm.pkg.github.com/"
   }
 }
