@@ -55,7 +55,7 @@
   "dependencies": {
     "casbin": "^4.1.1",
     "casbin-mongodb-adapter": "^1.1.11",
-    "mongodb": "^3.5.5",
+    "mongodb": "^4.0.0",
     "uuid": "^8.0.0"
   },
   "peerDependencies": {
