@@ -83,7 +83,7 @@
     "open-cli": "5.0.0",
     "prettier": "2.4.1",
     "reflect-metadata": "0.1.13",
-    "remark-cli": "7.0.1",
+    "remark-cli": "12.0.0",
     "remark-lint-emphasis-marker": "1.0.4",
     "remark-lint-strong-marker": "1.0.4",
     "remark-preset-lint-recommended": "3.0.4",
