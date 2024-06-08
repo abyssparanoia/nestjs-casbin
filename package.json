@@ -53,7 +53,7 @@
     "node": ">=8.9"
   },
   "dependencies": {
-    "casbin": "^4.1.1",
+    "casbin": "^5.0.0",
     "casbin-mongodb-adapter": "^1.1.11",
     "mongodb": "^3.5.5",
     "uuid": "^8.0.0"
