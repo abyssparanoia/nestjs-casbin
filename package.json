@@ -64,7 +64,7 @@
   "devDependencies": {
     "@bitjson/npm-scripts-info": "1.0.0",
     "@bitjson/typedoc": "0.15.0-0",
-    "@nestjs/cli": "8.1.1",
+    "@nestjs/cli": "8.2.8",
     "@nestjs/common": "8.0.6",
     "@nestjs/config": "1.2.1",
     "@nestjs/core": "8.0.6",
