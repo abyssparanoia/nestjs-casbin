@@ -82,7 +82,7 @@
     "nyc": "15.1.0",
     "open-cli": "5.0.0",
     "prettier": "2.4.1",
-    "reflect-metadata": "0.1.13",
+    "reflect-metadata": "0.2.2",
     "remark-cli": "7.0.1",
     "remark-lint-emphasis-marker": "1.0.4",
     "remark-lint-strong-marker": "1.0.4",
